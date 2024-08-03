@@ -21,11 +21,13 @@ h1 {
 .year {
     cursor: pointer;
     font-weight: bold;
+    font-size: large;
     margin-bottom: 10px;
     padding: 5px;
     align-content: center;
     text-align: center;
-    width: 200px;
+    width: 230px;
+    height: 30px;
     background-color: #e8e8e8;
     border-radius: 10px;
     margin-left: auto;
