@@ -1,6 +1,6 @@
 
 html, body {
-    height: calc(100% - 45.5px);
+    height: calc(100% - 60.5px);
 }
 h1 {
     text-align: center;
@@ -8,6 +8,13 @@ h1 {
     margin-right: 75px ;
     
 }
+@media only screen and (max-width: 530px) {
+    h1 {
+      height: 67.5px;
+    }
+  }
+  
+
 iframe {
     display: block;
     border-radius: 10px;
@@ -19,9 +26,10 @@ img {
     border-radius: 10px;
 }
 #top {
-    height: 90px;
+    height: 105px;
     display: flex;
     align-items: center;
     justify-content:center;
     
 }
+
