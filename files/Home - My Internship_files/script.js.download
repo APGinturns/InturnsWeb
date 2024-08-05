@@ -1,0 +1,51 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+
+//Check Pages
+function checkPages() {
+  let links = document.querySelectorAll('.custom-navbar .nav-link');
+  let currentLocation = window.location.pathname.split('/').pop().split('.')[0];
+
+  for (let link of links) {
+    let dataActive = link.getAttribute('data-active');
+    if (dataActive === currentLocation) {
+      link.classList.add('active');
+      break; // Exit the loop after finding the active link
+    }
+  }
+}
+// Call the function to check the active page on page load
+checkPages();
+
+
+}
+/*
+     FILE ARCHIVED ON 00:46:45 Jan 02, 2024 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 17:21:43 Aug 01, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.973
+  exclusion.robots: 0.043
+  exclusion.robots.policy: 0.019
+  esindex: 0.025
+  cdx.remote: 8.508
+  LoadShardBlock: 136.584 (3)
+  PetaboxLoader3.datanode: 76.72 (4)
+  PetaboxLoader3.resolve: 123.318 (2)
+  load_resource: 161.1
+*/

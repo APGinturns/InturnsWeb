@@ -1,0 +1,453 @@
+
+/* Mobile Navbar */
+@media screen and (max-width: 767px) {
+  .custom-navbar {
+    height: auto;
+    position: relative;
+    padding: 10px;
+  }
+
+  .navbar-left-links,
+  .navbar-right-links {
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+/* Adjust the left position for the left links container */
+  .navbar-left-links {
+    left: 10px; 
+  }
+
+  /* Adjust the right position for the right links container */
+  .navbar-right-links {
+    right: 10px; 
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 0 5px;
+  }
+
+/* Adjust the font size for the links on mobile */
+  .custom-navbar .nav-link {
+    font-size: 17px !important; 
+    padding: 2px;
+  }
+
+  /* Adjust the size of the headshot logo on mobile */
+  .circle-image {
+    max-width: 5px; 
+    display: block; 
+  }
+}
+
+/* Remaining Styles for Navbar */
+.custom-navbar {
+  background-image: url(/web/20240102004645im_/https://www.chrisdigeronimo.com/assets/images/background/navbarbackground-transformed.jpeg);
+  background-repeat: repeat;
+  height: 80px;
+  box-shadow: 2px 2px 4px #00573b;
+  position: relative;
+  background-size: contain;
+  z-index: 1;
+}
+
+.custom-navbar .nav-link {
+  position: relative;
+  color: white;
+  text-shadow: 4px 4px 8px black;
+}
+
+.custom-navbar .nav-link::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-navbar .nav-link:hover::before,
+.custom-navbar .nav-link.active::before {
+  visibility: visible;
+  transform: scaleX(0.80);
+  transition-delay: 0s;
+}
+
+.custom-navbar .nav-link.active::before {
+  transition-delay: 0.2s;
+}
+
+
+/*Hero Slider*/
+    
+/* Fonts */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://web.archive.org/web/20240102004645im_/https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap);
+}
+
+.hero-slider {
+  width: 100%;
+  height: 45vh;
+  overflow: hidden;
+  position: relative;
+   /* display: flex;
+  align-items: flex-end; */
+}
+
+.carousel-cell {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-cell .inner {
+  position: relative;
+  top: 45%;
+  transform: translateY(-50%);
+  color: white;
+  text-align: center;
+}
+
+.carousel-cell .subtitle {
+  font-family: 'Roboto Slab', serif;
+  font-size: 2.2rem;
+  line-height: 1.2em;
+  font-weight: 200;
+  font-style: italic;
+  letter-spacing: 3px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 5px;
+}
+
+.carousel-cell .title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5rem;
+  text-shadow: 5px 5px 10px black;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+  filter: brightness(100%);
+}
+
+.carousel-cell .btn {
+  border: 1px solid #fff;
+  padding: 14px 18px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  filter: brightness(100%);
+  text-shadow: 4px 4px 8px black;
+  letter-spacing: 3px;
+  color: #fff;
+  backdrop-filter: blur(0.5px);
+  transition: all 0.2s ease;
+}
+
+.carousel-cell .btn:hover {
+  background: #00573b;
+  border: 1px solid #fff;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  text-shadow: 20px 20px 40px black;
+}
+
+/* Custom styles for Flickity carousel arrows */
+.flickity-prev-next-button {
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+  cursor: pointer;
+}
+
+.flickity-prev-next-button:hover {
+  opacity: 1;
+}
+
+.flickity-prev-next-button svg {
+  fill: black;
+  width: 60px;
+  height: 60px;
+  transition: fill 0.7s;
+}
+
+.flickity-prev-next-button:hover svg {
+  fill: #00573b;
+  transition: fill 1s;
+}
+
+.flickity-prev-next-button .arrow-circle {
+  fill: #fff;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.flickity-prev-next-button:hover .arrow-circle {
+  opacity: 1;
+}
+
+
+
+  /* Footer */
+  @import url('https://web.archive.org/web/20240102004645cs_/https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+  
+  footer {
+    position: relative;
+    background-image: url(/web/20240102004645im_/https://www.chrisdigeronimo.com/assets/images/background/navbarbackground-transformed.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding-top: 40px;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  .footer-content h3 {
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+  }
+  
+  .footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+  }
+  
+  .socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+  }
+  
+  .socials li {
+    margin: 0 10px;
+  }
+  
+  .socials a {
+    text-decoration: none;
+    color: #fff;
+    padding: 7px;
+    border-radius: 50%;
+  }
+  
+  .socials a i {
+    font-size: 1.5rem;
+    width: 20px;
+    transition: color 0.4s ease;
+  }
+  
+  .socials a:hover i {
+    color: #4267B2;
+  }
+  
+  .footer-bottom {
+    background-image: linear-gradient(#00573b 0%, black 100%, #00573b 0%);
+    width: 100;
+    padding: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  .footer-bottom p {
+    float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+  }
+  
+  .footer-bottom p a {
+    color: #44bae8;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  
+  .footer-bottom span {
+    text-transform: uppercase;
+    opacity: 0.4;
+    font-weight: 200;
+  }
+  
+  .footer-menu {
+    float: right;
+  }
+  
+  .footer-menu ul {
+    display: flex;
+  }
+  
+  .footer-menu ul li {
+    padding-right: 10px;
+    display: block;
+  }
+  
+  .footer-menu ul li a {
+    color: #cfd2d6;
+    text-decoration: none;
+  }
+  
+  .footer-menu ul li a:hover {
+    color: #05d694;
+  }
+
+/* Mobile-specific footer styles for phones (max-width: 500px) */
+@media (max-width: 500px) {
+  body, html, div, ul, li, a {
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer {
+    padding-bottom: 60px;
+    text-align: center;
+    background-image: linear-gradient(#00573b 0%, black 100%, #00573b 0%);
+  }
+
+  .footer-menu {
+    text-align: center;
+    padding: 0; 
+  }
+
+  .footer-menu ul {
+    display: block;
+    padding: 0; 
+    list-style: none; 
+    margin: 0; 
+  }
+
+  .footer-menu ul li {
+    display: inline-block;
+    text-align: center; 
+    margin: 0 auto; 
+  }
+
+  .footer-menu ul li a {
+    color: #00573b;
+    text-decoration: none;
+    padding: 10px; /* Padding for better touch target */
+    display: block; 
+    font-size: 14px; 
+  }
+
+  .footer-menu ul li a:hover {
+    color: #05d694;
+  }
+
+  /* More padding at the bottom of the footer content */
+  .footer-bottom {
+    padding-bottom: 40px;
+  }
+}
+  
+  /*Divider*/
+  body { background: rgb(255, 255, 255); }
+          
+          .divider {								
+              display: table; 
+              font-size: 24px; 
+              text-align: center; 
+              width: 85%; 						
+              margin: 3px auto;					
+          }
+          .divider span { display: table-cell; position: relative; }
+          .divider span:first-child, .divider span:last-child {
+              width: 50%;
+              top: 30px;							
+              -moz-background-size: 100% 2px; 	
+              background-size: 100% 2px; 			
+              background-position: 0 0, 0 100%;
+              background-repeat: no-repeat;
+          }
+          .divider span:first-child {				
+              background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(#00573b));
+              background-image: -webkit-linear-gradient(180deg, transparent, #00573b);
+              background-image: -moz-linear-gradient(180deg, transparent, #00573b);
+              background-image: -o-linear-gradient(180deg, transparent, #00573b);
+              background-image: linear-gradient(90deg, transparent, #00573b);
+          }
+          .divider span:nth-child(2) {
+              color: #000000; padding: 0px 5px; width: auto; white-space: nowrap;
+          }
+          .divider span:last-child {				
+              background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#00573b), to(transparent));
+              background-image: -webkit-linear-gradient(180deg, #00573b, transparent);
+              background-image: -moz-linear-gradient(180deg, #00573b, transparent);
+              background-image: -o-linear-gradient(180deg, #00573b, transparent);
+              background-image: linear-gradient(90deg, #00573b, transparent);
+          }
+
+          .divider-logo img {
+            display: block;
+            width: 75px;
+            height: 75px;
+          }
+
+          /* Mobile-specific styles for phones (max-width: 500px) */
+@media (max-width: 500px) {
+  .presentationimg {
+    height: 98%;
+    width: 98%;
+  }
+}
+          
+/*
+     FILE ARCHIVED ON 00:46:45 Jan 02, 2024 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 17:21:44 Aug 01, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.758
+  exclusion.robots: 0.028
+  exclusion.robots.policy: 0.013
+  esindex: 0.014
+  cdx.remote: 16.383
+  LoadShardBlock: 83.343 (3)
+  PetaboxLoader3.datanode: 77.987 (4)
+  PetaboxLoader3.resolve: 104.566 (2)
+  load_resource: 125.875
+*/
