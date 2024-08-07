@@ -3,11 +3,13 @@ html, body {
     height: calc(100% - 60.5px);
 }
 h1 {
+    font-family: Arial, sans-serif;
     text-align: center;
     height: 37.5px;
     margin-right: 75px ;
-    
+    font: bold;
 }
+
 @media only screen and (max-width: 530px) {
     h1 {
       height: 67.5px;
@@ -32,4 +34,22 @@ img {
     justify-content:center;
     
 }
+
+.close-button {
+    position: absolute;
+    top: 10px; /* Adjust the position as needed */
+    right: 10px; /* Adjust the position as needed */
+    font-size: 45px;
+    margin-top: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    color: rgb(255, 140, 140);
+    transition: color 0.3s;
+}
+
+.close-button:hover {
+    color: rgb(254, 0, 0);
+    transition: color 0.3s;
+}
+
 
