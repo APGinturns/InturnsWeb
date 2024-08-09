@@ -51,13 +51,12 @@ h1 {
 }
 
 
-.inturns {
+.interns {
     display: none;
     margin-left: auto;
     margin-right: auto;
-    /* margin-top: 10px; */
     margin-bottom: 10px;
-    max-width: 300px;
+    max-width: 900px;
     min-width: 265px;
     padding-left: 20px;
     padding-right: 20px;
@@ -67,11 +66,11 @@ h1 {
     border-radius: 30px;
 }
 
-.inturns p {
+.interns p {
     margin: 4px;
 }
 
-.inturns div > li {
+.interns div > li {
     margin-top: 10px;
     user-select: none;
     -webkit-user-select: none;
@@ -84,7 +83,7 @@ ul {
     padding: 0;
 }
 
-.inturns li {
+.interns li {
     cursor: pointer;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -118,7 +117,7 @@ ul {
     color: rgb(138, 138, 138);
 }
 
-.inturns .groupIMG img {
+.interns .groupIMG img {
     max-width: 100%;
     margin-left: 0px;
     border-radius: 20px;
@@ -126,15 +125,15 @@ ul {
     
 }
 
-.inturns li:hover {
+.interns li:hover {
     background-color: #d3d3d3;
 }
 
-.inturns li:active {
+.interns li:active {
     background-color: #b0b0b0;
 }
 
-.inturns img {
+.interns img {
     max-width: 65px;
     margin-right: 10px;
     margin-left: 40px;
