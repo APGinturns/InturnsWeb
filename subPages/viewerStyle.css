@@ -1,6 +1,7 @@
 
 html, body {
     height: calc(100% - 60.5px);
+    background-color: #2d4936;
 }
 h1 {
     font-family: Arial, sans-serif;
@@ -8,6 +9,7 @@ h1 {
     height: 37.5px;
     margin-right: 75px ;
     font: bold;
+    color: white;
 }
 
 @media only screen and (max-width: 530px) {
@@ -38,17 +40,16 @@ img {
 .close-button {
     position: absolute;
     top: 10px; /* Adjust the position as needed */
-    right: 10px; /* Adjust the position as needed */
-    font-size: 45px;
-    margin-top: 10px;
-    margin-right: 10px;
+    left: 10px; /* Adjust the position as needed */
+    font-size: 75px;
+    margin-left: 10px;
     cursor: pointer;
-    color: rgb(255, 140, 140);
+    color: white;
     transition: color 0.3s;
 }
 
 .close-button:hover {
-    color: rgb(254, 0, 0);
+    color: rgb(138, 138, 138);
     transition: color 0.3s;
 }
 
