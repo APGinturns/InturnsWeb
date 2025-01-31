@@ -238,11 +238,36 @@
         </div>
     </div>
     
+    <div class="Login">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal" id="loginModal">
+            <h2>Login</h2>
+            <form class="login-form">
+                <div class="form-group">
+                    <label>Username:</label><br>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="form-group">
+                    <label>Password:</label><br>
+                    <input type="password" id="password" required>
+                </div>
+                <div style="text-align: right;">
+                    <button type="button" onclick="hideLoginModal()" class="modal-btn">Cancel</button>
+                    <button type="submit" onclick="login()" class="modal-btn">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
 
     <div class="footer">
+        
         <p>Contact inquiries: <a href="mailto:APGinterns@outlook.com">APGinterns@outlook.com</a></p>
+        <a id="Login" href="#" onclick="showLoginModal()">Admin-Login</a>
     </div>
+
     
+
+        
 
     <script src="script.js"></script>
 </body>

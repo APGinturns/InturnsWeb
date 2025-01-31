@@ -58,6 +58,39 @@ function display(type) {
     }
 }
 
+function showLoginModal() {
+    document.getElementById('loginModal').style.display = 'block';
+    document.getElementById('modalOverlay').style.display = 'block';
+}
+
+function hideLoginModal() {
+    document.getElementById('loginModal').style.display = 'none';
+    document.getElementById('modalOverlay').style.display = 'none';
+}
+
+// Close modal when clicking outside
+window.onclick = function(event) {
+    const modal = document.getElementById('loginModal');
+    const overlay = document.getElementById('modalOverlay');
+    
+    if (event.target === overlay) {
+        hideLoginModal();
+    }
+}
+
+// Example login function (you can modify this to suit your needs)
+function login() {
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    if (username && password) {
+        console.log('Login attempt detected!\nUsername: ' + username + '\nPassword: ' + password);
+        hideLoginModal();
+    } else {
+        console.log('Please fill in all fields!');
+    }
+}
+
 //Onload Functions
 
 window.onload =  display('all');
