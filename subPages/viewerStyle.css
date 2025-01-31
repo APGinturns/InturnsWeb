@@ -3,14 +3,16 @@ html, body {
     height: calc(100% - 60.5px);
     background-color: #2d4936;
 }
+
+
 h1 {
     font-family: Arial, sans-serif;
     text-align: center;
     height: 37.5px;
-    margin-right: 75px ;
+    margin-left: 30px ;
     font: bold;
     color: white;
-}
+} 
 
 @media only screen and (max-width: 530px) {
     h1 {
@@ -25,14 +27,15 @@ iframe {
 }
 img {
     max-width: 65px;
-    margin-right: 10px;
-    margin-left: 40px;
+    margin-right: -20px;
+    /* margin-left: 40px; */
     border-radius: 10px;
 }
 #top {
     height: 105px;
     display: flex;
     align-items: center;
+    gap: 10px;
     justify-content:center;
     
 }

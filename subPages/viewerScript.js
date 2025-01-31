@@ -94,5 +94,3 @@ function closeTab() {
     window.close();
 }
 
-
-
